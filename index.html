@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/menu_deroulant.css">
+    <script src="assets/js/btnBurger.js" defer></script>
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cl_navbar">
+        <nav>
+            <!--Mon navbar coté gauche-->
+            <section class="nav_gauche">
+                <ul id="menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Recette</a></li>
+                    <li><a href="#">Recherche</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+            <!--Mon navbar coté droit-->
+            <section class="nav_droite">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#">Se connecter</a>
+
+                <!-- <a href="#">S'inscrire</a> -->
+                <button class="bt_inscription">S'inscrire</button>
+            </section>
+            <!-- bouton burger -->
+            <button class="burger" onclick="btnBurger()">☰</button>
+        </nav>
+    </header>
+    <main>
+        <!--La banière-->
+        <section class="baniere">
+            <div class="recouvrir"></div>
+            <div class="baniere_txt">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-start">
+                        <div class="col-12 col-md-6 text-white">
+                            <h2>Choisissez parmi des milliers de recettes</h2>
+                            <p>Intégrer judicieusement une valeur ajoutée techniquement solide avec
+                                des intermédiaires d'information évolutifs et négocier des thématiques
+                                stratégiques durables
+                            </p>
+                            <div class="inscrire"><a href="#">Inscrivez-vous dès aujourd'hui <i
+                                        class="fa-solid fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu recette lateral -->
+        <section class="container_total">
+            <article class="container_gauche">
+                <section class="menu_type_plat">
+                    <!-- Menu type de plat premier menu deroulant-->
+                    <h2>Recettes</h2>
+                    <a href="#" class="btn-menu" id="clic_menu_type_plat">
+                        <span>Type de plat</span>
+                        <span class="plus-moins">+</span>
+                    </a>
+                    <ul id="menu_deroulant_plat" class="menu-deroulant">
+                        <li><a href="#">Amuse-gueules et collations</a></li>
+                        <li><a href="#">Recettes de pain</a></li>
+                        <li><a href="#">Recettes de gâteaux</a></li>
+                        <li><a href="#">Bonbons et fudge</a></li>
+                        <li><a href="#">Recettes de cassolettes</a></li>
+                        <li><a href="#">Biscuits de noël</a></li>
+                        <li><a href="#">Recettes de cocktails</a></li>
+                        <li><a href="#">Plats principaux</a></li>
+                        <li><a href="#">Recettes de pâtes</a></li>
+                        <li><a href="#">Biscuits de tartes</a></li>
+                        <li><a href="#">Sandwichs</a></li>
+                    </ul>
+                </section>
+                <section class="menu_type_repas menuRecette">
+                    <!-- Menu type de repas deuxième menu deroulant-->
+                    <a href="#" class="btn-menu" id="clic_menu_type_repas">
+                        <span>Type de repas</span>
+                        <span class="plus-moins">+</span>
+                    </a>
+                    <ul id="menu_deroulant_repas" class="menu-deroulant">
+                        <li><a href="#">Petit-déjeuner et brunch</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#">Diners</a></li>
+                        <li><a href="#">Déjeuner</a></li>
+                    </ul>
+                </section>
+
+                <section class="menu_type_sante menuRecette">
+                    <!-- Menu alimentation santé troisième menu deroulant-->
+                    <a href="#" class="btn-menu" id="clic_menu_type_sante">
+                        <span>Alimentation et santé</span>
+                        <span class="plus-moins">+</span>
+                    </a>
+                    <ul id="menu_deroulant_sante" class="menu-deroulant">
+                        <li><a href="#">Diabétique</a></li>
+                        <li><a href="#">Sans gluten</a></li>
+                        <li><a href="#">Recettes riches en fibres</a></li>
+                        <li><a href="#">Faible en calories</a></li>
+                    </ul>
+                </section>
+
+                <section class="menu_type_monde menuRecette">
+                    <!-- Menu cuisine du monde quatrième menu deroulant-->
+                    <a href="#" class="btn-menu" id="clic_menu_type_monde">
+                        <span>Cuisine du monde</span>
+                        <span class="plus-moins">+</span>
+                    </a>
+                    <ul id="menu_deroulant_monde" class="menu-deroulant">
+                        <li><a href="#">Chinois</a></li>
+                        <li><a href="#">Indien</a></li>
+                        <li><a href="#">Italien</a></li>
+                        <li><a href="#">Mexicain</a></li>
+                    </ul>
+                </section>
+
+                <section class="menu_type_Saisonnier menuRecette">
+                    <!-- Menu saisonnier cinquième menu deroulant-->
+                    <a href="#" class="btn-menu" id="clic_menu_type_saisonnier">
+                        <span>Saisonnier</span>
+                        <span class="plus-moins">+</span>
+                    </a>
+                    <ul id="menu_deroulant_saisonnier" class="menu-deroulant">
+                        <li><a href="#">Baby shower</a></li>
+                        <li><a href="#">Anniversaire</a></li>
+                        <li><a href="#">Noêl</a></li>
+                        <li><a href="#">Halloween</a></li>
+                    </ul>
+                </section>
+
+            </article>
+            <article class="container_droite">
+                <section class="folio_recette">
+                    <article class="recherche">
+                        <div class="rechercheLoupe">
+                            <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+
+                            <input type="text" placeholder="Rechercher des recettes...">
+                        </div>
+                        <select id="choix" name="choix">
+                            <option value="tri1">Tri par : Plus récent</option>
+                            <option value="tri2">Tri par : Les mieux notés</option>
+                            <option value="tri3">Tri par : Tendances</option>
+                        </select>
+                    </article>
+                    <article class="recette_tableau">
+
+
+                    </article>
+
+                    <div class="pagination">
+                    </div>
+
+                </section>
+
+            </article>
+
+        </section>
+    </main>
+    <script src="assets/js/menuDeroulant.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
