@@ -11,35 +11,37 @@
     <link rel="stylesheet" href="assets/css/menu_deroulant.css">
     <script src="assets/js/btnBurger.js" defer></script>
     <link rel="stylesheet" href="assets/css/pagination.css">
+    <link rel="stylesheet" href="assets/css/videoCard.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header class="cl_navbar">
-        <nav>
+        <div class="container">
             <!--Mon navbar coté gauche-->
-            <section class="nav_gauche">
-                <ul id="menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Recette</a></li>
-                    <li><a href="#">Recherche</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </section>
-            <!--Mon navbar coté droit-->
-            <section class="nav_droite">
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#">Se connecter</a>
+            <nav>
+                <section class="nav_gauche">
+                    <ul id="menu">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="./pages/recette.html">Recette</a></li>
+                        <li><a href="#">Recherche</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+                <!--Mon navbar coté droit-->
+                <section class="nav_droite">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#">Se connecter</a>
 
-                <!-- <a href="#">S'inscrire</a> -->
-                <button class="bt_inscription">S'inscrire</button>
-            </section>
-            <!-- bouton burger -->
-            <button class="burger" onclick="btnBurger()">☰</button>
-        </nav>
+                    <!-- <a href="#">S'inscrire</a> -->
+                    <button class="bt_inscription">S'inscrire</button>
+                </section>
+                <!-- bouton burger -->
+                <button class="burger" onclick="btnBurger()">☰</button>
+            </nav>
+        </div>
     </header>
-    <main>
-        <!--La banière-->
+    <main> <!--La banière-->
         <section class="baniere">
             <div class="recouvrir"></div>
             <div class="baniere_txt">
@@ -60,7 +62,7 @@
         </section>
 
         <!-- menu recette lateral -->
-        <section class="container_total">
+        <section class="container container_total">
             <article class="container_gauche">
                 <section class="menu_type_plat">
                     <!-- Menu type de plat premier menu deroulant-->
@@ -156,18 +158,114 @@
                     </article>
                     <article class="recette_tableau">
 
+                        <!-- Ici viennent les images du tableau des recette -->
 
                     </article>
 
                     <div class="pagination">
+                        
                     </div>
-
                 </section>
 
             </article>
 
         </section>
+        <div class="entete-video">
+            <h1 id="titre-videos">Video</h1>
+            <select id="choix" name="choix">
+                <option value="tri1">En vedette</option>
+                <option value="tri2">En vedette</option>
+                <option value="tri3">En vedette</option>
+            </select>
+        </div>
+
+        <section class="container video-container">
+            <article class="video-card">
+                <div class="video">
+                    <img src="./assets/images/macaronCafe.jpg" alt="Vidéo">
+                    <div class="play-video">▶</div>
+                    <div class="video-text">
+                        <p>Cours de prépation culinaire</p>
+                        <p id="text-auteur">de Thomas Haller</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <div class="video">
+                    <img src="./assets/images/video_cocktail.jpg" alt="Vidéo">
+                    <div class="play-video">▶</div>
+                    <div class="video-text">
+                        <p>Cours de prépation culinaire</p>
+                        <p id="text-auteur">de Thomas Haller</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <div class="video">
+
+                    <img src="./assets/images/video_cours_cuisine.jpg" alt="Vidéo">
+                    <div class="play-video">▶</div>
+                    <div class="video-text">
+                        <p>Cours de prépation culinaire</p>
+                        <p id="text-auteur">de Thomas Haller</p>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <div class="video">
+
+                    <img src="./assets/images/video_magrets.jpg" alt="Vidéo">
+                    <div class="play-video">▶</div>
+                    <div class="video-text">
+                        <p>Cours de prépation culinaire</p>
+                        <p id="text-auteur">de Thomas Haller</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="offre-premier">
+            <h2>Soyez le premier à connaître les dernières offres, à <br>
+                recevoir les nouvelles recettes tendance et bien plus <br>encore !</h2>
+            <div class="offre-premier-email">
+                <input type="email" id="email" name="email" placeholder="Adresse email" required>
+                <a href="#">S'abonner</a>
+            </div>
+        </section>
     </main>
+    <footer>
+        <section class="reseau-sociaux">
+            <div class="text-end">
+                <img src="./assets/images/Facebook.png" alt="">
+                <img src="./assets/images/Instagram.jpg" alt="">
+                <img src="./assets/images/twitter-icon.png" alt="">
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <p>Présentations</p>
+                    <p>Les professionnels</p>
+                    <p>Magasin</p>
+                </div>
+                <div class="col-3">
+                    <p>Webinaires</p>
+                    <p>Atelier</p>
+                    <p>Rencontres locales</p>
+                </div>
+                <div class="col-3">
+                    <p>Nos initiatives</p>
+                    <p>Rendre l'appareille</p>
+                    <p>communautés</p>
+                </div>
+                <div class="col-3">
+                    <p>Formulaire de contact</p>
+                    <p>Travailler avec nous</p>
+                    <p>Venez nous rendre visite</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/js/menuDeroulant.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 

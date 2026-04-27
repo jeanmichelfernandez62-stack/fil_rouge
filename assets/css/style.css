@@ -13,14 +13,13 @@
 }
 
 body {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1280px;
+    margin: 0 auto; */
     font-family: "MaPolice", sans-serif;
-    body {
-    padding-left: clamp(10px, 3vw, 40px);
-    padding-right: clamp(10px, 3vw, 40px);
+    /* padding-left: clamp(10px, 3vw, 40px);
+    padding-right: clamp(10px, 3vw, 40px); */
 }
-}
+
 
 
 /*--------------------------------------------      
@@ -100,8 +99,9 @@ body {
                 Bannière
 ----------------------------------------------*/
 .baniere {
-    width: 100%;
-    /* aspect-ratio: 16 / 6; */
+    width: 75%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 6; 
     background: url(../images/Baniere_header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,11 +161,72 @@ body {
     /* déplacement vers la droite au survol */
 }
 
-/* .container_total{
-    display: flex;
-} */
+.offre-premier-email{
+    background-color: #eb4a36;
+}
+
+.offre-premier {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #eb4a36;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: clamp(30px, 8vw, 70px) 0;
+    gap: 20px;
+}
+
+.offre-premier-email input {
+    background-color: #eb4a36;
+    color: white;
+    border: 2px solid white;   /* ma vraie bordure */
+    outline: none;             /* enlève le contour noir */
+    border-radius: 30px;
+    width: 50%;
+    font-size: 15px;
+    padding: clamp(8px, 2vw, 12px) clamp(12px, 4vw, 20px);
+}
+
+.offre-premier-email a {
+    background-color:#FCC417;
+    color: black;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: clamp(8px, 2vw, 13px) clamp(12px, 4vw, 40px);
+    text-decoration: none;
+}
+
+.offre-premier-email input::placeholder {
+    color: white;
+}
+
+.reseau-sociaux {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.reseau-sociaux img {
+    width: 40px;
+    padding-top: 40px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
 
 @media (max-width:768px) {
+.baniere {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+}
+
+.offre-premier {
+    width: 100%;
+}
 
     #menu {
         display: none;

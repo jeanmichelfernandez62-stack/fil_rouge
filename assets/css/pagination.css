@@ -1,0 +1,33 @@
+/* --------------------------
+   Style du bouton
+----------------------------- */
+#choix {
+    background-color: #e9604e;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: white;
+    cursor: pointer; /* active le curseur en forme de main */
+    font-size: clamp(12px, 1.2vw, 14px);
+}
+
+#choix:focus{
+  outline: none; /* supprime la bordure noire au clic */
+  box-shadow: none; /* supprime l’ombre éventuelle */
+}
+
+/*---------------------------------------------------
+                    Pagination
+---------------------------------------------------*/
+.pagination { 
+  display: flex; 
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0px 0 40px;
+}
+
+.pagination a{
+  color: rgb(59, 59, 59);
+}
